@@ -1,0 +1,31 @@
+version: 0.2
+#env:
+# variables:  
+#   NODE_ENV=development
+#   DB_NAME=drupal
+#   DB_USER=tulipcmsuser
+#   DB_PASSWORD=tulip_2021
+#   DB_HOST=localhost
+#   DB_DIALECT=mysql
+#   DB_PORT=3306
+#    PORT=3331
+#   CMS_URL=http://13.233.81.205/cms  
+phases:
+  install:
+    commands:
+      - echo install packages here.
+  pre_build:
+    commands:
+      - echo pre build maybe install dependencies here...
+        #      - npm install
+  build:
+    commands:
+      - echo Build started on `date`
+      - echo might use this to run mocha
+        # - npm run dev
+  post_build:
+    commands:
+      - echo Build completed on `date`
+artifacts:
+   files:
+     - '**/*'

@@ -1,1 +1,1 @@
-# tulip
+# tulip service to retrieve cms content
